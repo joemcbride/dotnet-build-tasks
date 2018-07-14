@@ -1,0 +1,38 @@
+{
+  "name": "dotnet-build-tasks",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Joe McBride",
+  "license": "MIT",
+  "scripts": {
+    "compile": "babel ./src --out-dir lib",
+    "lint": "eslint ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joemcbride/dotnet-build-tasks.git"
+  },
+  "keywords": [
+    "make",
+    "compile",
+    "tasks"
+  ],
+  "bugs": {
+    "url": "https://github.com/joemcbride/dotnet-build-tasks/issues"
+  },
+  "homepage": "https://github.com/joemcbride/dotnet-build-tasks#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.6",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.1.0",
+    "eslint-plugin-babel": "^5.1.0"
+  },
+  "dependencies": {
+    "shelljs": "^0.8.2",
+    "simple-make": "^1.2.0",
+    "xml-reader": "^2.4.3"
+  }
+}
