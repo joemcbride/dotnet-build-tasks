@@ -22,3 +22,4 @@ export default async function artifactory(settings) {
   })
 
   return Promise.all(promises)
+}
