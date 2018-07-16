@@ -11,9 +11,9 @@ export default async function artifactory(settings) {
 
   const { branch } = await git()
 
-  const source = branch === 'master' ? 'Artifactory-Master' : 'Artifactory-Branches'
+  const source = branch === (settings.masterBranchName || 'master') ? settings.nugetSourceMaster : settings.nugetSourceBranches
   const packages = find(settings.artifactsPath).filter(file => file.match(/\.nupkg$/))
-  const apiKey = process.env.NugetApiKey || ''
+  const apiKey = settings.nugetApiKey
 
   const promises = []
 
@@ -22,4 +22,3 @@ export default async function artifactory(settings) {
   })
 
   return Promise.all(promises)
-}
