@@ -1,6 +1,6 @@
 {
   "name": "dotnet-build-tasks",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "main": "index.js",
   "author": "Joe McBride",
   "license": "MIT",
@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "shelljs": "^0.8.2",
-    "simple-make": "^1.2.0",
+    "simple-make": "^2.0.0",
     "xml-reader": "^2.4.3"
   }
 }
